@@ -10,16 +10,19 @@ const MainNavigation = () => {
             <nav>
                 <ul className={styles.nav_links}>
                     <li>
-                        <Link className={styles.a} to='/'><button>Home1</button></Link>
+                        <Link className={styles.a} to='/'><button>Home</button></Link>
                     </li>
                     <li>
-                        <Link className={styles.a} to='/'><button>Home2</button></Link>
+                        <Link className={styles.a} to='/kanban'><button>Kanban</button></Link>
                     </li>
                     <li>
-                        <Link className={styles.a} to='/'><button>Home3</button></Link>
+                        <Link className={styles.a} to='/teams'><button>Teams</button></Link>
                     </li>
                     <li>
-                        <Link className={styles.a} to='/'><button>Home4</button></Link>
+                        <Link className={styles.a} to='/dashboard'><button>Dashboard</button></Link>
+                    </li>
+                    <li>
+                        <Link className={styles.a} to='/login'><button>Login</button></Link>
                     </li>
                 </ul>
             </nav>
