@@ -6,21 +6,23 @@ const MainNavigation = () => {
 
     return (
         <header className={styles.header}>
-            <div className={styles.logo}>Management System</div>
+            <img className={styles.logo} src='/project-management.png' alt='Management System'/>
             <nav>
                 <ul className={styles.nav_links}>
                     <li>
-                        <Link className={styles.a} to='/'>Home</Link>
+                        <Link className={styles.a} to='/'><button>Home1</button></Link>
                     </li>
                     <li>
-                        <Link className={styles.a} to='/'>Home2</Link>
+                        <Link className={styles.a} to='/'><button>Home2</button></Link>
                     </li>
                     <li>
-                        <Link className={styles.a} to='/'>Home3</Link>
+                        <Link className={styles.a} to='/'><button>Home3</button></Link>
+                    </li>
+                    <li>
+                        <Link className={styles.a} to='/'><button>Home4</button></Link>
                     </li>
                 </ul>
             </nav>
-            <Link to='/'><button>Contact</button></Link>
         </header>
     )
 }
