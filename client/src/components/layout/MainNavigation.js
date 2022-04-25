@@ -4,9 +4,11 @@ import styles from './MainNavigation.module.css';
 
 const MainNavigation = () => {
 
+    const LOGO = '/project-management.png'
+
     return (
         <header className={styles.header}>
-            <img className={styles.logo} src='/project-management.png' alt='Management System'/>
+            <img className={styles.logo} src={LOGO} alt='Management System'/>
             <nav>
                 <ul className={styles.nav_links}>
                     <li>
