@@ -1,14 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* background-color: #24252A; */
 }
 
 li, a, button {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1em;
     color: #edf0f1;
     text-decoration: none;
 }
@@ -17,42 +18,80 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 30px;
+    padding: 0.3em;
+    position: relative;
+    background: linear-gradient(0deg, rgba(0,3,25,1) 0%, rgba(3,0,50,1) 100%);
 }
 
 .logo {
     cursor: pointer;
     margin-right: auto;
-    color: #edf0f1;
+    margin-left: 1em;
+    width: 4em;
+    height: 4em;
 }
 
 .nav_links {
     list-style: none;
+    margin-right: 1em;
 }
 
 .nav_links li {
     display: inline-block;
-    padding: 0px 20px;
-}
-
-.nav_links li .a {
-    transition: all 0.3s ease 0s;
+    padding: 1em;
 }
 
 .nav_links li .a:hover {
-    color: #0088a9;
+    text-shadow:
+    0 0 0.3em #89ff00, 0 0 0.7em #89ff00,
+    0 0 1.3em #89ff00, 0 0 2.5em #89ff00;
+}
+
+a:before {
+    content: '';
+    position: absolute;
+    top: 0.1em;
+    left: 0.1em;
+    right: 0.1em;
+    bottom: 0.1em;
+    z-index: -1;
+}
+
+a:after {
+    content: '';
+    position: absolute;
+    top: 0.1em;
+    left: 0.1em;
+    right: 0.1em;
+    bottom: 0.1em;
+    z-index: -1;
+    filter: blur(0.7em);
+}
+
+a:nth-child(1):before,
+a:nth-child(1):after {
+    background: linear-gradient(235deg, #ff005e, #010615, #fbff00);
 }
 
 button {
-    margin-left: 20px;
-    padding: 9px 25px;
-    background-color: rgba(0, 136, 169, 1);
-    border: none;
+    margin-left: 0.6em;
+    padding: 0.5em 1.2em;
+    background: #010615;
+    border: seagreen;
     border-radius: 50px;
+    border-width: 1px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    box-shadow: 
+            0 0 0.3rem #89ff00,
+            0 0 0.1rem #89ff00,
+            0 0 0.1rem #89ff00,
+            inset 0 0 0.3rem #89ff00;
 }
 
 button:hover {
-    background-color: rgba(0, 136, 169, 1);
+    background-color: rgba(33, 150, 243, 0.2);
+    text-shadow:
+    0 0 1px #89ff00, 0 0 2px #89ff00,
+    0 0 1px #89ff00, 0 0 2px #89ff00;
 }

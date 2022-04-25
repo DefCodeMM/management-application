@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .body {
@@ -15,22 +17,22 @@
 
 .box {
     position: relative;
-    width: 300px;
-    height: 400px;
+    width: 20em;
+    height: 26em;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #060c21;
-    margin: 40px;
+    margin: 2.5em;
 }
 
 .box:before {
     content: '';
     position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
+    top: -0.1em;
+    left: -0.1em;
+    right: -0.1em;
+    bottom: -0.1em;
     background: #fff;
     z-index: -1;
 }
@@ -38,13 +40,13 @@
 .box:after {
     content: '';
     position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
+    top: -0.1em;
+    left: -0.1em;
+    right: -0.1em;
+    bottom: -0.1em;
     background: #fff;
     z-index: -1;
-    filter: blur(40px);
+    filter: blur(2.5em);
 }
 
 .box:nth-child(1):before,
@@ -66,14 +68,14 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 50%;
+    width: 100%;
     height: 100%;
     display: block;
-    background: rgba(255, 255, 255, .1);
+    background:linear-gradient(90deg, rgba(3,0,43,0.1) 0%, rgba(10,10,10,0.1) 51%, rgba(7,0,47,0.1) 100%);
     pointer-events: none;
 }
 
 .box .content {
-    padding: 20px;
+    padding: 1.2em;
     color: #fff;
 }
